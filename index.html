@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Tic Tac Toe</h1>
+    <div id="symbolSelectionPopup" class="popup">
+      <p>Please select your symbol:</p>
+      <input type="radio" id="symbolX" name="symbol" value="X" checked>
+      <label for="symbolX">X</label>
+      <input type="radio" id="symbolO" name="symbol" value="O">
+      <label for="symbolO">O</label>
+      <p>Please select your opponent:</p>
+      <input type="radio" id="friend" name="opponent" value="friend" checked>
+      <label for="friend">Play with a friend</label>
+      <input type="radio" id="ai" name="opponent" value="ai">
+      <label for="ai">Play against AI</label>
+      <br>
+      <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id="board" class="board">
+      <div class="cell" onclick="handleMove(0)"></div>
+      <div class="cell" onclick="handleMove(1)"></div>
+      <div class="cell" onclick="handleMove(2)"></div>
+      <div class="cell" onclick="handleMove(3)"></div>
+      <div class="cell" onclick="handleMove(4)"></div>
+      <div class="cell" onclick="handleMove(5)"></div>
+      <div class="cell" onclick="handleMove(6)"></div>
+      <div class="cell" onclick="handleMove(7)"></div>
+      <div class="cell" onclick="handleMove(8)"></div>
+    </div>
+    <button id="resetBtn" onclick="resetGame()">Reset Game</button>
+    <div id="winPopup" class="win-popup">
+      <p id="winMessage" class="win-message"></p>
+      <button id="restartBtn" onclick="restartGame()">Restart Game</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
