@@ -4,7 +4,7 @@ This is a simple JavaScript-based Tic-Tac-Toe game that you can play in your bro
 
 ## Live Demo
 
-You can play the game here: [Live Demo](https://fahad-247.github.io/tic-tac-toe/)
+You can play the game here: [Live Demo](https://muzamal-478.github.io/tic-tac-toe/)
 
 ## How to Run
 
